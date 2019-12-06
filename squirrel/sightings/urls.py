@@ -4,7 +4,7 @@ from . import views
 
 urlpatterns = [
     path('add/',views.add_squirrel),
-    path('<squirrel_id>/',views.edit_squirrel),
+    path('<str:squirrel_id>/',views.edit_squirrel),
     path('', views.all_squirrels),
     #path('<char:squirrel_uniqueid>/',views.squirrel_details),#design a function squirrel_details in views.py
     #path('<char:squirrel_latitude>/',views.squirrel_details)

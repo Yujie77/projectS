@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .forms import SquirrelForm
 
 from .models import squirrel
 
@@ -28,15 +29,15 @@ def add_squirrel(request):
     return render(request, 'sightings/edit.html', context)
 
 def edit_squirrel(request, squirrel_id):
-    squirrel = suqirrel.objects.get(id=squirrel_id)
+    getsquirrel= squirrel.objects.get(uniqueid=squirrel_id)
     if request.method == 'POST':
-        form = SquirrelForm(request.POST, instance=squirrel)
+        form = SquirrelForm(request.POST, instance=getsquirrel)
         # check data with form
         if form.is_valid():
             form.save()
             return redirect(f'/sightings/{squirrel_id}')
     else:
-        form = SquirrelForm(instance=squirrel)
+        form = SquirrelForm(instance=getsquirrel)
 
     context = {
         'form': form,
