@@ -20,6 +20,6 @@ Project Group 83, Section 2
 UNIs: [lt2765, yh3207]
 
 ## 4. Project link
-http://104.154.140.23/sightings/
+http://35.225.36.110/sightings/
 
-http://104.154.140.23/maps/
+http://35.225.36.110/maps/
