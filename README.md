@@ -1,7 +1,7 @@
 # Keep track of all the squirrels
 ## 1. Project description
 This project is mainly used to track all the squirrels in the Central Park. It has two main applications, which are sightings and maps. 
-It could import the 2018 Central Park Squirrel Census data and allwo people to add, update, view squirrel data and export updated data. 
+It could import the 2018 Central Park Squirrel Census data and allow people to add, update, view squirrel data and export updated data. 
 
 More specifically, for the application of sightings, it will show a table that lists all squirrel sightings with links to edit each.
 When you click the unique link for each squirrel, you could update a particular sighting.
